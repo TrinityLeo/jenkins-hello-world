@@ -16,12 +16,14 @@ pipeline{
         }
 
         stage('Unit Test') {
-            sh 'mvn test'
+            steps {
+                sh 'mvn test'
+            }
         }
 
     }
     tools {
-        maven '399'
+        maven 'M399'
     }
 
     
